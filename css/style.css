@@ -20,7 +20,7 @@ a{text-decoration:none}
 .display-1{font-size:3rem}
 .btn{display:inline-block;font-size:15px;padding:12px 23px;cursor:pointer;font-weight:bold;letter-spacing:1px}
 .btn-light{background:#fff;border:1px solid #fff;color:#4d4d4d;border-top-right-radius:20px;border-bottom-left-radius:20px}
-.btn-dark{background:#98FF98;border:1px solid #98FF98;color:#4d4d4d}
+.btn-dark{background:#0bc5f1;border:1px solid #0bc5f1;color:#4d4d4d}
 form label{display:inline-block;margin-bottom:6px}
 form .form-group{margin-bottom:16px}
 form .form-control{width:100%;padding:7px 12px;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:20px}
@@ -28,14 +28,14 @@ form .form-control{width:100%;padding:7px 12px;font-size:1rem;line-height:1.5;co
 /* Mainheader */
 #mainheader{color:#4d4d4d}
 #mainheader h1{color:#000;font-weight:200;padding-top:20px;padding-bottom:20px}
-#navbar{background:#98FF98;color:#fff;overflow:auto;padding-top:10px;padding-bottom:10px}
+#navbar{background:#0bc5f1;color:#fff;overflow:auto;padding-top:10px;padding-bottom:10px}
 #navbar a{color:#4d4d4d}#navbar .logo{float:left;padding-top:5px;font-size:25px;height:100px}
 #navbar ul{list-style:none;float:right}#navbar ul li{float:left}
-#navbar ul li .btn{color:#98FF98}
+#navbar ul li .btn{color:#0bc5f1}
 #navbar ul li a{display:block;padding:20px;text-align:center}
 
 /* Showcase */
-#showcase{background:#98FF98;text-align:center;padding:10px;border-bottom-right-radius:50% 50%;border-bottom-left-radius:50% 50%}
+#showcase{background:#0bc5f1;text-align:center;padding:10px;border-bottom-right-radius:50% 50%;border-bottom-left-radius:50% 50%}
 #showcase h1{font-weight:800;color:#4d4d4d;line-height:1.2em}
 #showcase a{margin:20px 30px 30px 20px}#Portfolio{padding:30px 0}
 #showcase .showcase-row-box img{width:150px;padding-right:10px;padding-top:10px}
@@ -62,6 +62,6 @@ form .form-control{width:100%;padding:7px 12px;font-size:1rem;line-height:1.5;co
 #contact .contact-box form button{width:48%;border-radius:20px;text-transform:uppercase}
 
 
-#mainfooter{background:#98FF98;text-align:center;padding:30px}
+#mainfooter{background:#0bc5f1;text-align:center;padding:30px}
 
 @media (max-width: 700px){.display-1{font-size:3rem}#navbar .logo{float:none;display:block;margin:0 auto;margin-bottom:20px}#navbar ul{float:none}#showcase{padding:10px;border-bottom-right-radius:0;border-bottom-left-radius:0}#showcase a{margin-bottom:80px}#Portfolio .Portfolio-row{flex-wrap:wrap}#Portfolio .Portfolio-row-box{padding:20px;margin:10px}#Portfolio .Portfolio-row-box img{height:150px;padding:10px}#about{padding:20px 0}#about .about-row{padding-top:0;flex-wrap:wrap}#contact{padding:50px 0}#contact .contact-box{padding:20px;margin:0px}#contact .contact-box form{padding:20px;width:100%}}

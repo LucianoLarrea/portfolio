@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos adicionales para mejorar la visualización en móviles */
+    body {
+      font-size: 16px; /* Tamaño de fuente base */
+    }
+    .container {
+      padding: 0 15px; /* Espaciado lateral */
+    }
+    .Portfolio-row {
+      display: flex;
+      flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+      justify-content: center; /* Centrar los elementos */
+    }
+    .Portfolio-row-box {
+      flex: 1 1 100%; /* Ocupa el 100% en móviles */
+      max-width: 300px; /* Ancho máximo para cada proyecto */
+      margin: 10px; /* Espaciado entre proyectos */
+    }
+    @media (min-width: 768px) {
+      .Portfolio-row-box {
+        flex: 1 1 45%; /* Dos columnas en pantallas más grandes */
+      }
+    }
+    @media (min-width: 992px) {
+      .Portfolio-row-box {
+        flex: 1 1 30%; /* Tres columnas en pantallas grandes */
+      }
+    }
+  </style>
   <title>My Portfolio</title>
 </head>
 <body>
@@ -13,19 +41,26 @@
   <header id="mainheader">
     <nav id="navbar">
       <div class="container">
-        
-        <ul>
-          <li><a href="#mainheader">Home</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#About">About Me</a></li>
-          <li><a class="contact-square btn btn-light" href="https://www.linkedin.com/in/takticflow/">LinkedIn</a></li>
+        <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; gap: 15px;">
+            <li><a href="#mainheader">Home</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About">About Me</a></li>
+          </div>
+          <div style="display: flex; gap: 15px;">
+            <li><a class="contact-square btn btn-light" href="https://www.linkedin.com/in/takticflow/">LinkedIn</a></li>
+            <li><a class="contact-square btn btn-light" href="https://www.youtube.com/@takticflow">YouTube</a></li>
+            <li><a class="contact-square btn btn-light" href="https://twitter.com/TakticF">Twitter</a></li>
+            <li><a class="contact-square btn btn-light" href="https://wa.me/5492612179519">WhatsApp</a></li>
+            <li><a class="contact-square btn btn-light" href="https://calendly.com/takticflow">Schedule Call</a></li>
+          </div>
         </ul>
       </div>
     </nav>
     <div id="showcase">
       <div class="container">
-        <h1 class="display-1">Passionate about Data Science</h1>
-        <p class="large"><b>Data Scientist | Data Analyst | Machine Learning Engineer</b></p>
+        <h1 class="display-1">Passionate about Data Science and Artificial Intelligence</h1>
+        <p class="large"><b>AI Engineer | Data Scientist | MBA | Business Process Specialist</b></p>
         <div class="showcase-row-box">
           <img src="img/about.png" alt="">
         </div>
@@ -71,7 +106,7 @@
         <!-- PROYECTO 4 -->
         <div class="Portfolio-row-box">
           <a href="https://github.com/LucianoLarrea/LifeExpectancy" target="_blank">
-          <img src="https://github.com/LucianoLarrea/LifeExpectancy/blob/main/LifeExpectancy_files/figure-html/grafico_continentes-1.png"  alt="" /></a>
+          <img src="https://raw.githubusercontent.com/LucianoLarrea/LifeExpectancy/main/LifeExpectancy_files/figure-html/grafico_continentes-1.png"  alt="Life Expectancy" /></a>
           <p><b>Analysis of the Life Expectancy across the world <br> </b>
             Data analysis of the Life Expectancy across the world using R and TidyTuesday datasets.<br>
           ▶️<a href="https://github.com/LucianoLarrea/LifeExpectancy"  target="_blank"><b>Repository </b></a></p>  
@@ -82,7 +117,7 @@
         <!-- PROYECTO 5 -->
         <div class="Portfolio-row-box">
           <a href="https://github.com/LucianoLarrea/Generate_README" target="_blank">
-          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png"  alt="" /></a>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240702120959/Readme1.png"  alt="README Generation" /></a>
           <p><b>Generate README file with AI Agents <br> </b>
             Development of AI agents that generates a README file for a GitHub repository using CrewAI framework.<br>
           ▶️<a href="https://github.com/LucianoLarrea/Generate_README"  target="_blank"><b>Repository </b></a></p>  
@@ -92,7 +127,7 @@
         <!-- PROYECTO 6 -->
         <div class="Portfolio-row-box">
           <a href="https://github.com/LucianoLarrea/Resume_Optimization" target="_blank">
-          <img src="https://github.com/LucianoLarrea/Resume_Optimization/blob/main/docs/AI-Agent.png"  alt="" /></a>
+          <img src="https://raw.githubusercontent.com/LucianoLarrea/Resume_Optimization/main/docs/AI-Agent.png"  alt="Resume optimization" /></a>
           <p><b>Resume Optimization with AI Agents <br> </b>
             Resume Optimization with CrewAI is an AI-powered tool that optimizes your resume for specific job applications using multiple AI agents.<br>
           ▶️<a href="https://github.com/LucianoLarrea/Resume_Optimization"  target="_blank"><b>Repository </b></a></p>  
@@ -115,16 +150,14 @@
         <div class="About-row-box">
           <h2>About Me</h2>
           <p>Hello, I am a Data Scientist with a background in engineering and master's degrees in business administration and strategic information management.
+            
             I have experience in project management following the PMI and Lean Management methodology. I have knowledge of Agile methodologies such as Scrum and Kanban. <br><br>
+            
+            My experience in business process improvement has equipped me with exceptional skills, including a holistic view of processes, systemic thinking, and strategic planning. Throughout my career, I have led teams in energy project development companies, which has given me a deep understanding of the business and helped me develop skills in collaborative teamwork and leadership, effectively coordinating with multiple contractors and suppliers. <br><br>
+          
+          <b>My professional goal is to continue growing in the field of data science and AI engineering, contributing to projects that enable organizations to achieve high performance through the implementation of Machine Learning and Artificial Intelligence models.</b> <br><br>
   
-  
-            My previous experience in business process improvement has given me exceptional skills, such as a holistic vision of processes, systemic thinking and strategic planning.
-            My experience as a team leader in energy project development companies has allowed me to get to know the business, develop skills such as collaborative teamwork and leadership working together with multiple contractors and suppliers.. <br><br>
-  
-  
-            <b>My work objective is to continue growing professionally in the area of data science and participating in projects that allow organizations to achieve high performance through the implementation of Machine Learning and Artificial Intelligence models.</b> <br><br>
-  
-            If you are looking for someone with my skills and experience, please contact me at takticflow@gmail.com.</p>
+            If you are looking for someone with my skills and experience, please contact me at takticflow@gmail.com or <a href="https://calendly.com/takticflow" target="_blank">schedule a meeting</a> or <a href="https://wa.me/5492612179519" target="_blank">contact me by WhatsApp</a>.</p>
         </div>
       </div>
       
@@ -157,7 +190,20 @@
 
   <section id="mainfooter">
     <div class="container">
-      
+      <footer style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 15px;">
+          <a href="#mainheader">Home</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#About">About Me</a>
+        </div>
+        <div style="display: flex; gap: 15px;">
+          <a class="contact-square btn btn-light" href="https://www.linkedin.com/in/takticflow/">LinkedIn</a>
+          <a class="contact-square btn btn-light" href="https://www.youtube.com/@takticflow">YouTube</a>
+          <a class="contact-square btn btn-light" href="https://twitter.com/TakticF">Twitter</a>
+          <a class="contact-square btn btn-light" href="https://wa.me/5492612179519">WhatsApp</a>
+          <a class="contact-square btn btn-light" href="https://calendly.com/takticflow">Schedule Call</a>
+        </div>
+      </footer>
     </div>
   </section>
   
